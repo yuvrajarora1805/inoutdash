@@ -27,6 +27,8 @@ services:
     image: mariadb:10.6
     container_name: inout-licence-db
     restart: always
+    ports:
+      - "3307:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=licence_secret_pass
       - MYSQL_DATABASE=licence_db
