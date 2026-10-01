@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  dashboard:
+    build: .
+    container_name: inout-licence-dashboard
+    restart: always
+    ports:
+      - "3002:3000"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=licence_secret_pass
+      - DB_NAME=licence_db
+      - LICENSE_SECRET=omvky-super-secret-key-2024-change-this-in-prod
+      - ADMIN_USER=admin
+      - ADMIN_PASS=admin123
+      - JWT_SECRET=super-secret-jwt-key-for-admin-session
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - licence-network
+
+  db:
+    image: mariadb:10.6
+    container_name: inout-licence-db
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=licence_secret_pass
+      - MYSQL_DATABASE=licence_db
+    volumes:
+      - licence-db-data:/var/lib/mysql
+    networks:
+      - licence-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  licence-network:
+    driver: bridge
+
+volumes:
+  licence-db-data:
