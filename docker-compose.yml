@@ -14,8 +14,8 @@ services:
       - DB_PASSWORD=licence_secret_pass
       - DB_NAME=licence_db
       - LICENSE_SECRET=omvky-super-secret-key-2024-change-this-in-prod
-      - ADMIN_USER=admin
-      - ADMIN_PASS=admin123
+      - ADMIN_USER=kohainout
+      - ADMIN_PASS=Koha@inout18
       - JWT_SECRET=super-secret-jwt-key-for-admin-session
     depends_on:
       db:
