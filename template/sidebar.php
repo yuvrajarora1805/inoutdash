@@ -53,6 +53,9 @@
             <li class="nav-item <?php echo ($title ?? '') === 'Setup' ? 'active' : ''; ?>">
               <a class="nav-link" href="setup.php"><i class="material-icons">settings_applications</i><p>Setup</p></a>
             </li>
+            <li class="nav-item <?php echo ($title ?? '') === 'AMC & License Management' ? 'active' : ''; ?>">
+              <a class="nav-link" href="amc.php"><i class="material-icons">vpn_key</i><p>License</p></a>
+            </li>
           <?php endif; ?>
 
           <?php if (!empty($user_access) && in_array('A02', $user_access)): ?>

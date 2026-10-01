@@ -3,14 +3,12 @@
   <div class="container-fluid">
     <nav class="float-left">
       <ul>
-        <li><a href="https://github.com/omkar2403/inout/" target="_blank">In Out Management System</a></li>
+        <li><a href="#" target="_blank">In Out Management System</a></li>
         <li><a href="https://www.koha-community.org/" target="_blank">Powered By KOHA Community</a></li>
       </ul>
     </nav>
     <div class="copyright float-right">
-      © <script>document.write(new Date().getFullYear())</script>, made with 
-      <i class="material-icons" style="color:red;">favorite</i> by 
-      <a href="https://omkar2403.github.io/its_me/" target="_blank">Omkar Kakeru</a> for a better web.
+      &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://bookport.in" target="_blank">bookport</a>
     </div>
   </div>
 </footer>               

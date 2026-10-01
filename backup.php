@@ -7,6 +7,7 @@ $title = "Backup";
 $acc_code = "R01";
 
 require "./functions/access.php";
+require "functions/dbconn.php";
 require_once "./template/header.php";
 require_once "./template/sidebar.php";
 require "functions/dbconn.php";

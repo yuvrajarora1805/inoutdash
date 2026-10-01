@@ -90,7 +90,6 @@ $news = !empty($data);
     </section>
     
     <footer class="foot text-center">
-        Designed By <a href="https://omkar2403.github.io/its_me/" target="_blank" style="color: pink;">Omkar Kakeru</a><br>
         Powered By <a href="https://www.koha-community.org/" target="_blank" style="color: pink;">Koha Community</a>
     </footer>
 

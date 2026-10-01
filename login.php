@@ -97,9 +97,6 @@ $msg = $_GET['msg'] ?? null;
                         </div>
                     </div>
                 </form>
-                <form>
-                    <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GffqOJ4TsFX8hN" async></script>
-                </form>
             </div>
         </div>
         
@@ -107,13 +104,12 @@ $msg = $_GET['msg'] ?? null;
             <div class="container">
                 <nav class="float-left footer-menu">
                     <ul>
-                        <li><a href="https://github.com/omkar2403/inout/">In Out System</a></li>
+                        <li><a href="#">In Out System</a></li>
                         <li><a href="https://www.koha-community.org/">Powered By KOHA Community</a></li>
                     </ul>
                 </nav>
                 <div class="copyright float-right">
-                    © <script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by
-                    <a href="https://omkar2403.github.io/its_me/" target="_blank">Omkar Kakeru</a> for a better web.
+                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://bookport.in" target="_blank">bookport</a>
                 </div>
             </div>
         </footer>

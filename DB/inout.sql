@@ -244,6 +244,19 @@ ALTER TABLE `users`
 ALTER TABLE `loc`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `licenses`
+--
+
+CREATE TABLE `licenses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `license_key` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
