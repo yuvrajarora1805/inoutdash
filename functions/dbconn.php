@@ -8,9 +8,9 @@ $password = "";
 $db = "inout";
 
 // Koha Database Credentials (Fallback for testing)
-$koha_db = "inout";
-$koha_user = "root";
-$koha_pass = "";
+$koha_db = "koha_library";
+$koha_user = "koha_library";
+$koha_pass = "u7#TY9mt8,R70(gs";
 
 date_default_timezone_set("Asia/Kolkata");
 
